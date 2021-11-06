@@ -3,9 +3,35 @@
 <head>
 	<title>Robinhood</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+    	/* Desktop */
+    	@media only screen and (min-width: 961px){
+    		.container{
+    			width: 960px;
+    		}
+    		.podcast-row {
+    			padding-left: 130px !important;
+    		}
+    		.podcast-btns {
+    			margin-right: 300px;
+    		}
+    	}
+    	/* Midsizes */
+    	@media only screen and (max-width: 960px){
+    		.container{
+    			width: 600px;
+    		}
+    		
+    	}
+    	/* Mobile */
+    	@media only screen and (max-width: 600px){
+    		.container{
+    			width: 100%;
+    		}
+    	}
+    </style>
 </head>
 <body style="background-color: black;">
 	<!-- Start of html email -->
@@ -36,12 +62,12 @@
 							<table class="header-imgs" width="100%" border="0" cellspacing="0" cellpadding="0">
 								<tr>
 									<td style="padding: 10px 25px 34px;" align="center">
-										<img width="340" height="157" src="/img/banner.png">
+										<img class="header-img-top" width="70%" src="/img/banner.png">
 									</td>
 								</tr>
 								<tr>
 									<td style="padding: 10px 25px;" align="center">
-										<img width="530" height="354" src="/img/main_pic.jpg">
+										<img class="header-img-bttm" width="90%"  src="/img/main_pic.jpg">
 									</td>
 								</tr>
 							</table>
@@ -59,7 +85,7 @@
 									</td>
 								</tr>
 							</table>
-							<table class="market-moves" width="100%" border="0" cellspacing="0" cellpadding="0" style=" background-color: white; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px;">
+							<table class="market-moves" width="100%" border="0" cellspacing="0" cellpadding="0" style=" background-color: white; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12px; padding: 0 10px;" >
 								<tr>
 									<td>
 										<p style="margin: 0;">Dow Jones <br> <strong>35,820 </strong><span style="color: #00c805">(+0.40%)</span></p>
@@ -409,7 +435,7 @@
 								</tr>
 								<tr>
 									<td>
-										<table align="right" style="padding-bottom: 15px;">
+										<table class="podcast-btns" align="right" style="padding-bottom: 15px;">
 											<tr>
 												<td style="padding: 5px;">
 													<img src="/img/apple_podcast.png">
